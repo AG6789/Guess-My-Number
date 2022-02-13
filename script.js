@@ -47,6 +47,10 @@ document.querySelector(".check").addEventListener("click", function () {
         "📈 Very close, but High ;-;";
       tries++;
       document.querySelector(".score").textContent = tries;
+    } else if (guess - secretNumber < 5) {
+      document.querySelector(".message").textContent =
+        "📈 Oh just in reach now! ;-;";
+      tries++;
     }
   } else if (guess < secretNumber) {
     if (secretNumber - guess >= 15) {
@@ -62,6 +66,10 @@ document.querySelector(".check").addEventListener("click", function () {
         "📉 Very close, but Low ;-;";
       tries++;
       document.querySelector(".score").textContent = tries;
+    } else if (secretNumber - guess < 5) {
+      document.querySelector(".message").textContent =
+        "📉 Oh just in reach now! ;-;";
+      tries++;
     }
   }
 });
