@@ -8,6 +8,8 @@ let tries = 0;
 let score = 20;
 
 document.querySelector(".highscore").textContent = score;
+document.querySelector(".highscore").fontcolour("lime");
+document.querySelector(".score").fontcolour("red");
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
@@ -86,3 +88,5 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundColor = "#222";
   document.querySelector(".number").style.width = "15rem";
 });
+
+
