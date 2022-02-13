@@ -21,7 +21,7 @@ document.querySelector(".check").addEventListener("click", function () {
     tries++;
     document.querySelector(".score").textContent = tries;
 
-    document.querySelector("body").style.backgroundColor = "#60b347";
+    document.querySelector("body").style.backgroundColor = "#FFD700";
     document.querySelector(".number").style.width = "30rem";
 
     document.querySelector(".number").textContent = secretNumber;
