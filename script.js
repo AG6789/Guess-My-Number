@@ -5,7 +5,7 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 document.querySelector(".number").textContent = "?";
 
 let tries = 0;
-let score = "No Attempts This Session";
+let score = 20;
 
 document.querySelector(".highscore").textContent = score;
 
